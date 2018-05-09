@@ -19,13 +19,13 @@
 
   <mat-spinner
     diameter="40"
-    *ngIf="loading && !(charactersResult | async)"
+    *ngIf="loading && !charactersResult"
   ></mat-spinner>
 </form>
 
 <div class="characters__results">
   <app-character
-    *ngFor="let char of (charactersResult | async);"
+    *ngFor="let char of charactersResult;"
     [character]="char"
   ></app-character>
 </div>
