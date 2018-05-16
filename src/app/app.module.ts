@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialManifestModule } from './material-manifest/material-manifest.module';
 import { AppComponent } from './app.component';
 import { SearchService } from './search/services/search.service';
-import { SearchModule } from './search/search.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +17,21 @@ import { SearchModule } from './search/search.module';
     BrowserAnimationsModule,
     MaterialManifestModule,
     HttpClientModule,
-    SearchModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'search',
+      },
+      {
+        path: 'search',
+        loadChildren: './search/search.module#SearchModule',
+      },
+      {
+        path: 'block-test',
+        loadChildren: './block-test/block-test.module#BlockTestModule',
+      },
+    ]),
   ],
   providers: [SearchService],
   bootstrap: [AppComponent],
