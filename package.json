@@ -7,9 +7,7 @@
     "build": "ng build",
     "test": "ng test --watch=true --code-coverage",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "rxjs-basic": "ts-node rxjs-examples/basic-examples.ts --p=rxjs-examples/tsconfig.json",
-    "rxjs-adv": "ts-node rxjs-examples/transformation-examples.ts --p=rxjs-examples/tsconfig.json"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
