@@ -1,3 +1,21 @@
-<mat-toolbar>Star Wars App!</mat-toolbar>
-<app-character-search></app-character-search>
+<mat-toolbar>
 
+  <mat-toolbar-row>
+    <span>Star Wars App!</span>
+    <span class="example-spacer"></span>
+    <button
+      mat-button
+      routerLink="search"
+    >
+      Search
+    </button>
+    <button
+      mat-button
+      routerLink="block-test"
+    >
+      Block Test
+    </button>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+<router-outlet></router-outlet>
