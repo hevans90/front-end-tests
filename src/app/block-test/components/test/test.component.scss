@@ -11,24 +11,28 @@
 }
 
 .test__block1 {
+  order: 1;
   min-width: 200px;
   height: 100px;
   background-color: rgba(blue, 0.2);
 }
 
 .test__block2 {
+  order: 0;
   min-width: 200px;
   height: 100px;
   background-color: rgba(green, 0.2);
 }
 
 .test__block3 {
+  order: 2;
   min-width: 200px;
   height: 100px;
   background-color: rgba(magenta, 0.2);
 }
 
 .test__block4 {
+  order: 3;
   min-width: 200px;
   height: 100px;
   background-color: rgba(gray, 0.2);
