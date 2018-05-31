@@ -1,6 +1,6 @@
 Using TDD, update the fizz-buzz service so it can do the following:
 
-Print numbers from 1 to 100
+Print all numbers from 1 to 100 to the console
 
 For multiples of 3 print 'Fizz' instead of the number
 For multiples of 5 print 'Buzz' instead of the number

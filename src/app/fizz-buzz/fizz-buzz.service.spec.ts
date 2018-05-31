@@ -18,4 +18,10 @@ describe('FizzBuzzService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should print 100 values', () => {
+    const spy = spyOn(console, 'log');
+    service.run();
+    expect(spy.calls.allArgs().length).toEqual(100);
+  });
 });
