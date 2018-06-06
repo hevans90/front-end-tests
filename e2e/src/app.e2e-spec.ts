@@ -9,7 +9,7 @@ describe('workspace-project App', () => {
   });
 
   it('should navigate to blocks', async () => {
-    page.navigateTo();
+    await page.navigateTo();
 
     const currUrl = await browser.getCurrentUrl();
     expect(currUrl).toEqual('WHY IS THE BROWSER NOT NAVIGATING?!');

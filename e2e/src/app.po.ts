@@ -2,7 +2,7 @@ import { browser, by, element } from 'protractor';
 
 export class AppPage {
   navigateTo() {
-    return browser.get('http://localhost:4300/block-test');
+    return browser.get('/block-test');
     // browser.navigate();
   }
 
