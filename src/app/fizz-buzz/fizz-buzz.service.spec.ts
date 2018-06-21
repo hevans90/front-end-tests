@@ -22,6 +22,7 @@ describe('FizzBuzzService', () => {
   it('should print 100 values', () => {
     const spy = spyOn(console, 'log');
     service.run();
-    expect(spy.calls.allArgs().length).toEqual(100);
+    expect(spy.calls.count()).toEqual(100);
   });
+
 });
