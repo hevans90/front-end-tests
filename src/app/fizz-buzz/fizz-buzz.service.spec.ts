@@ -25,4 +25,10 @@ describe('FizzBuzzService', () => {
     expect(spy.calls.count()).toEqual(100);
   });
 
+  describe('fizzBuzz', () => {
+    it('should return the number it is passed', () => {
+      expect(service.fizzBuzz(1)).toEqual(1);
+    });
+  });
+
 });
